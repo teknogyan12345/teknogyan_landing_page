@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "teknogyan_landing_page",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.4.1"
+    "@astrojs/tailwind": "^3.1.2",
+    "astro": "^2.4.4",
+    "tailwindcss": "^3.3.2"
   }
 }
