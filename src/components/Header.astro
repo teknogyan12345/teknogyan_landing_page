@@ -1,34 +1,71 @@
 <nav
   class="relative flex px-2 py-2 mx-auto justify-center md:justify-between items-center"
 >
-  <div class="w-16  pl-4 py-1">
+  <div class="hidden md:block w-16 pl-4 py-1">
     <a href="/">
-      <img src="/img/logo-no-background.png" alt="TeknoGyan Logo" >
+      <img src="/img/logo-no-background.png" alt="TeknoGyan Logo" />
     </a>
   </div>
+
+  <!-- large menu -->
   <div class="hidden md:flex space-x-4">
     <a
       href="/"
-      class=" px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
       >Home</a
     >
     <a
-      href="#about"
-      class=" px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      href="about"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
       >About</a
     >
     <a
       href="#projects"
-      class=" px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
       >Projects</a
     >
     <a
       href="contact"
-      class=" px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
       >Contact</a
     >
   </div>
-  <div class="absolute top-6 right-2 text-2xl md:hidden">
+
+  <!-- mobile menu -->
+
+  <div id="mobile-menu" class="absolute top-0 pt-52 bg-tgLightBlue w-screen h-screen hidden flex flex-col md:hidden gap-16">
+    <a
+      href="/"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      >Home</a
+    >
+    <a
+      href="about"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      >About</a
+    >
+    <a
+      href="#projects"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      >Projects</a
+    >
+    <a
+      href="contact"
+      class="px-2 py-1 text-tgBlue rounded-lg hover:bg-tgBlue hover:text-white"
+      >Contact</a
+    >
+  </div>
+
+
+  <div id="menu-bar" class="absolute top-6 right-2 text-2xl md:hidden">
     <i class="fa-solid fa-bars-staggered"></i>
   </div>
 </nav>
+
+<script>
+  const menuBar = document.getElementById('menu-bar');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBar.addEventListener("click", () => {
+    mobileMenu.classList.toggle('hidden')
+  })
+</script>
