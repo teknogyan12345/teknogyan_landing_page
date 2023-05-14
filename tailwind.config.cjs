@@ -8,7 +8,12 @@ module.exports = {
 			lg: '976px',
 			xl: '1440px',     
 		  },
-		extend: {},
+		extend: {
+			colors: {
+				tgBlue: '#6C63FF',
+				tgLightBlue: '#b4b0ff'
+			}
+		},
 	},
 	plugins: [],
 }
