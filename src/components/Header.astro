@@ -38,16 +38,17 @@
     </a>
   </div>
 
-  <div id="mobile-menu" class="absolute top-[-1000px] pt-52 bg-tgLightBlue w-screen h-screen  flex flex-col md:hidden gap-16 ease-in duration-300 ">
+  <div
+    id="mobile-menu"
+    class="absolute top-[-1000px] pt-52 bg-tgLightBlue w-screen h-screen flex flex-col md:hidden gap-16 ease-in duration-300"
+  >
     <a
       href="/"
-      class="px-2 py-1 text-white font-bold rounded-lg hover:scale-105"
-      >Home</a
+      class="px-2 py-1 text-white font-bold rounded-lg hover:scale-105">Home</a
     >
     <a
       href="/about"
-      class="px-2 py-1 text-white font-bold rounded-lg hover:scale-105"
-      >About</a
+      class="px-2 py-1 text-white font-bold rounded-lg hover:scale-105">About</a
     >
     <a
       href="/projects"
@@ -61,29 +62,29 @@
     >
   </div>
 
-
-  <div id="menu-icons">
-    <div id="menu-bar" class="absolute top-6 right-4 text-3xl md:hidden">
+  <div id="menu-icons" class="md:hidden">
+    <div id="menu-bar" class="absolute top-6 right-4 text-3xl ">
       <i class="fa-solid fa-bars-staggered"></i>
     </div>
-  
-    <div id="menu-cross" class="hidden absolute top-6 right-4 text-3xl md:hidden">
+
+    <div
+      id="menu-cross"
+      class="hidden absolute top-6 right-4 text-3xl "
+    >
       <i class="fa-solid fa-xmark"></i>
     </div>
   </div>
-  
 </nav>
 
 <script>
-  const menuIcons = document.getElementById('menu-icons');
-  const menuBar = document.getElementById('menu-bar');
-  const menuCross = document.getElementById('menu-cross')
-  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcons = document.getElementById("menu-icons");
+  const menuBar = document.getElementById("menu-bar");
+  const menuCross = document.getElementById("menu-cross");
+  const mobileMenu = document.getElementById("mobile-menu");
   menuIcons.addEventListener("click", () => {
     menuBar.classList.toggle("hidden");
-    menuCross.classList.toggle('hidden');
-    mobileMenu.classList.toggle('top-[-1000px]');
-    mobileMenu.classList.toggle('top-0');
-
-  })
+    menuCross.classList.toggle("hidden");
+    mobileMenu.classList.toggle("top-[-1000px]");
+    mobileMenu.classList.toggle("top-0");
+  });
 </script>
